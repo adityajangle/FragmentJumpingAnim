@@ -15,8 +15,6 @@ class MainActivity : AppCompatActivity() {
     fun loadFrag(frag:Fragment)
     {
         val txn=supportFragmentManager.beginTransaction()
-        if(!txn.isEmpty)
-            txn.remove(frag)
         txn.replace(R.id.frameLayout,frag)
         txn.commit()
     }

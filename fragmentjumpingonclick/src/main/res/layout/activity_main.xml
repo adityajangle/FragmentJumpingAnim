@@ -16,10 +16,6 @@
             android:layout_marginTop="8dp"
             android:id="@+id/frameLayout">
 
-        <fragment
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" android:name="com.example.fragmentjumpingonclick.FragRotate"
-                android:id="@+id/fragment2" tools:layout="@layout/fragment_frag_rotate"/>
     </FrameLayout>
     <fragment
             android:layout_width="0dp"

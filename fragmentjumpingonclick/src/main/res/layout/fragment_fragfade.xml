@@ -3,11 +3,14 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
+
              tools:context=".Fragfade">
 
-    <TextView
+    <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/fade_fragment"/>
+            android:id="@+id/imgVwfade"
+            android:src="@drawable/floura_image"
+    />
 
 </FrameLayout>

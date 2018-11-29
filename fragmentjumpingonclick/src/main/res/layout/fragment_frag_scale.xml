@@ -3,12 +3,16 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
+
              tools:context=".FragScale">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Scale Fragment"/>
+            android:id="@+id/imgVwScale"
+            android:src="@drawable/floura_image"
+            android:contentDescription="Scale View"
+    />
 
 </FrameLayout>

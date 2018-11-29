@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import kotlinx.android.synthetic.main.fragment_fix.view.*
 
 class FixFrag : Fragment() {
 //val hostActivity=activity as MainActivity
@@ -33,6 +34,12 @@ class FixFrag : Fragment() {
         view.findViewById<Button>(R.id.btnFade).setOnClickListener {
             (activity as MainActivity).loadFrag(Fragfade())
         }
+        view.findViewById<Button>(R.id.btnFade).
+            setOnLongClickListener {
+                (activity as MainActivity).loadFrag(Fragfade())
+
+                return@setOnLongClickListener true
+            }
 
     }
 }
